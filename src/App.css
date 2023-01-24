@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -35,4 +35,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+h4{
+  border-bottom: 1px solid #ccc;
+}
+h4 span{
+  position: relative;
+  padding-right: 10px;
+}
+h4 span::after{
+  content: "";
+  display:block;
+  height: 1px;
+  width: calc(100% + 10px);
+  background-color: #fff;
+  position: absolute;
+  bottom:-2px;
 }
